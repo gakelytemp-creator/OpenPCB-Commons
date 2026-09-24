@@ -28,9 +28,27 @@ It should also be able to say:
 
 The method is part of the knowledge.
 
+AISocket provides one route from real hardware into that knowledge system: bounded observations and experiments produce traces; those traces enter Noepedia through staging and the Socratic Daimonion rather than becoming settled knowledge automatically.
+
 ## What we want to build together
 
 A public archive of real electronic objects — not only finished schematics.
+
+For the live structured archive and search layer, OpenPCB Commons is intended to use **[Noepedia](https://github.com/gakelytemp-creator/Noepedia)**.
+
+Noepedia is a persistent, addressable semiotic knowledge field: it keeps objects, relations, provenance, uncertainty, revisions, and raw-artifact references outside any one person's or model's memory. Its persistent field is mediated by the Socratic Daimonion.
+
+In this project that means a board should eventually be searchable not only by filename or text, but through its relations:
+
+~~~text
+board → component → marking
+board → pad → net
+claim → evidence → instrument
+failure → repair → replacement part
+part → compatibility → second-life use
+~~~
+
+The repository remains the human-readable commons and portable project record. Noepedia is intended to become the live structured storage and search layer.
 
 We want to preserve photographs, geometry, components, nets, measurements, block diagrams, partial schematics, known failures, repair experience, alternative uses, reusable parts, unknowns, disagreements, and the history of how each conclusion was reached.
 
@@ -98,6 +116,7 @@ Just leave enough of the road visible that the next curious person does not have
 
 ### Repository map
 
+- [`NOEPEDIA_INTEGRATION.md`](NOEPEDIA_INTEGRATION.md) — how Noepedia will be used as OpenPCB's live structured storage and search layer
 - [`FOUNDING_PRINCIPLES.md`](FOUNDING_PRINCIPLES.md) — why this commons exists
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — many small ways to participate
 - [`INSTRUMENTS/`](INSTRUMENTS/) — tools and experimental methods
@@ -105,5 +124,7 @@ Just leave enough of the road visible that the next curious person does not have
 - [`SECOND_LIFE/`](SECOND_LIFE/) — reuse, adaptation, and second-life knowledge
 - [`OPEN_BOXES.md`](OPEN_BOXES.md) — open and repair-friendly products/manufacturers
 - [`BLACK_BOXES.md`](BLACK_BOXES.md) — unnecessarily closed products
+
+The detailed cross-project pilot requirements live in Noepedia: [AISocket + OpenPCB pilot](https://github.com/gakelytemp-creator/Noepedia/blob/main/PILOT_AISOCKET_OPENPCB.md).
 
 > **Decompose to understand. Compose to create.**
