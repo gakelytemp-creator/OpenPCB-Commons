@@ -33,6 +33,8 @@ Please distinguish, when possible:
 
 A good contribution does not need certainty. It needs honesty about certainty.
 
+As the Noepedia pilot comes online, contributions should be allowed to enter a **staging/inbox** state first. A contributor should not need to know the final ontology or graph location before submitting useful evidence. The Socratic Daimonion can later help reconcile identity, attach provenance, ask for clarification, and decide whether material is promoted, kept provisional, disputed, or left as raw evidence.
+
 ## Instruments
 
 If your contribution came from an instrument, please record enough to reproduce or understand the result:
