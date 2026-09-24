@@ -182,7 +182,7 @@ A relation may remain provisional or disputed.
 
 ## Raw files and large artifacts
 
-OpenPCB contains data that should not be forced into triplets:
+OpenPCB contains large payloads whose **bytes** should not be decomposed into triplets:
 
 - board photographs;
 - microscope images;
@@ -194,7 +194,7 @@ OpenPCB contains data that should not be forced into triplets:
 - datasheets;
 - large scan files.
 
-Noepedia should represent each artifact as an addressable RAW_BLOB object with a content hash, media type, provenance, permissions, and relations to the objects it documents.
+The photograph, waveform, geometry file, scan, or other artifact is still an ordinary addressable object in Noepedia. The field reaches it through ordinary SPO relations just as it reaches any other object. Only the large byte payload may live in a separate content-addressed store. The artifact can play a RAW_BLOB role with a content hash, media type, provenance, permissions, and SPO relations to the objects it documents.
 
 The bytes may initially live in a separate content-addressed object/file store.
 
