@@ -106,14 +106,22 @@ The Daimonion mediates:
 
 ~~~text
 request / contribution
+→ semiotic scene reconstruction
 → context clarification
 → permission check
 → identity reconciliation
+→ choose / assemble working mega-graph
 → placement or staging
 → search / retrieval
 → revision tracking
 → audit
 ~~~
+
+For OpenPCB this matters because a short semantic request such as "is this regulator bad?" is not yet a technical scene.
+
+The working scene may need the board, rail, expected function, measurement point, instrument state, neighboring components, prior repairs, provenance, and competing failure hypotheses before the question is actually well-formed.
+
+The mega-graph is allowed to treat predicates and network handles as objects: for example, compare two failure-pattern networks, weaken component identity to look for an analogy, or turn a hierarchy relation into a spatial/functional role for one investigation.
 
 ---
 
@@ -318,6 +326,8 @@ Then add a second board and test cross-board search.
 
 The first convincing moment will be when a fact discovered on one board helps investigate another board without either investigator needing the original chat.
 
+A stronger second milestone will be when the system reuses a successful investigation garment — a learned way of assembling measurements, topology, function, provenance, and competing predicates — and then modifies that garment when a new board exposes a failure in the old reconstruction.
+
 ---
 
 ## Relationship to this GitHub repository
@@ -357,4 +367,4 @@ That document defines the minimum identity, provenance, staging, blob, search, p
 >
 > **Noepedia stores and finds the structured knowledge.**
 >
-> **The Daimonion guards the transactions between them.**
+> **The Daimonion reconstructs the investigation scene, chooses the working form, and guards what returns to persistent knowledge.**
