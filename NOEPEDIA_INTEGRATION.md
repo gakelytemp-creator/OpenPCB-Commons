@@ -98,11 +98,29 @@ It should preserve:
 - search indexes;
 - task-relevant relational retrieval.
 
+### OpenPCB does not host a second Noepedia
+
+OpenPCB should preserve domain evidence and domain-facing structure, but it should not duplicate Noepedia's OPEN-space machinery, meta-layer orchestration, consolidation logic, or internal Daimonion process graph.
+
+This keeps the integration replaceable and auditable:
+
+~~~text
+OpenPCB evidence / domain objects
+        ↓
+stable Noepedia boundary
+        ↓
+internal Noepedia processing
+~~~
+
+---
+
 ### Socratic Daimonion
 
 OpenPCB clients do not directly rewrite the persistent Noepedia field.
 
-The Daimonion mediates:
+The Noepedia Daimonion boundary mediates persistent operations. Internally that boundary may be implemented by multiple layer-local Daimonion processes working in parallel.
+
+It mediates:
 
 ~~~text
 request / contribution
