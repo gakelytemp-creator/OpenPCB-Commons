@@ -155,3 +155,31 @@ Just leave enough of the road visible that the next curious person does not have
 The detailed cross-project pilot requirements live in Noepedia: https://github.com/gakelytemp-creator/Noepedia/blob/main/PILOT_AISOCKET_OPENPCB.md
 
 > **Decompose to understand. Compose to create.**
+
+---
+
+## Ecosystem Boundary: OpenPCB Commons vs Noepedia
+
+OpenPCB Commons owns the **electronics-investigation domain**: boards, components, photographs, measurements, reconstructed nets, repair histories, donor-part knowledge, investigation methods, and the human-readable commons.
+
+Noepedia owns the **persistent cross-context knowledge machinery**: object identity, relation networks, provenance, OPEN structures, revision, consolidation, and task-relevant relational retrieval.
+
+OpenPCB therefore should not grow a second private Noepedia inside itself.
+
+~~~text
+board / image / measurement / hypothesis
+        ↓
+OpenPCB domain record
+        ↓
+Noepedia transaction boundary
+        ↓
+persistent relational knowledge
+        ↓
+task-relevant cut / OPEN requirement / next-test request
+        ↓
+OpenPCB / AISocket investigation
+~~~
+
+The Socratic Daimonion may be internally plural and parallel inside Noepedia, but OpenPCB should depend only on the stable mediated boundary.
+
+> **OpenPCB owns the workshop and evidence trail. Noepedia owns the reusable knowledge field.**
