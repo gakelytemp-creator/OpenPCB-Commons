@@ -183,3 +183,7 @@ OpenPCB / AISocket investigation
 The Socratic Daimonion may be internally plural and parallel inside Noepedia, but OpenPCB should depend only on the stable mediated boundary.
 
 > **OpenPCB owns the workshop and evidence trail. Noepedia owns the reusable knowledge field.**
+
+### Scientific context for shared Noepedia mechanisms
+
+Where this project touches Noepedia mechanisms such as reconstruction, prediction mismatch, active learning, meta-layers, decoupling, or model-based regulation, earlier scientific precedents and the differences from Noepedia are tracked centrally in [Noepedia — Scientific Context and References](https://github.com/gakelytemp-creator/Noepedia/blob/main/SCIENTIFIC_CONTEXT_AND_REFERENCES.md). This link is for historical and methodological context; it does not imply that those earlier works validate this domain project or Noepedia as a whole.
